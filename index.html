@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Real Stans of Twitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Main background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000000;
+        }
+        h1 {
+            color: #1DA1F2;
+            font-size: 36px;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+        }
+        a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0d8bf2;
+        }
+        .cast-section {
+            display: none; /* Hidden by default */
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px; /* Adjust based on your image size */
+        }
+        .cast-section img {
+            width: 100%; /* Makes the image responsive */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <h1>The Real Stans of Twitter</h1>
+    <p>Join the drama in our <a href="https://x.com/i/communities/1885551872515178586" target="_blank">Twitter Community</a>!</p>
+    
+    <!-- Buttons to toggle cast sections -->
+    <button class="button" onclick="showSection('returning-cast')">Returning Cast</button>
+    <button class="button" onclick="showSection('audition-picks')">Audition Picks</button>
+
+    <!-- Returning Cast Section -->
+    <div id="returning-cast" class="cast-section">
+        <img src="returning-cast.jpg" alt="Returning Cast">
+    </div>
+
+    <!-- Audition Picks Section -->
+    <div id="audition-picks" class="cast-section">
+        <img src="audition-picks.jpg" alt="Audition Picks">
+    </div>
+
+    <!-- Full Cast List -->
+    <h2>Meet the Cast</h2>
+    <ul>
+        <li>aj - @SAUVETIIER</li>
+        <li>King Jair - @KingRiChflex</li>
+        <li>Pau The Don - @MwahItzPAU</li>
+        <li>The Only Kiraa - @Onlykiraa1_</li>
+        <li>Theresalgy - @iggyexpress</li>
+        <li>raptingz1 - @raptingz1</li>
+        <li>Hex Doll - @discoheaven</li>
+        <li>kailani - @lanisinparis</li>
+        <li>Domy - @Fallin4Domy</li>
+        <li>Nick stunna - @nickibrown69</li>
+        <li>Shawn Dior - @ShawnDi0r</li>
+        <li>Britney The Don - @Britneyscure</li>
+        <li>Odie - @odiedadon</li>
+        <li>S - @zaestarr</li>
+        <li>Josh Dior - @toseteree</li>
+        <li>dtiny - @therealdtiny</li>
+    </ul>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.cast-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
